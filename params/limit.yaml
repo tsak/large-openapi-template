@@ -1,0 +1,7 @@
+in: query
+name: limit
+schema:
+  type: integer
+  minimum: 1
+  default: 50
+description: Limit the number of results

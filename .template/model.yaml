@@ -1,0 +1,7 @@
+title: _Name_
+type: object
+properties:
+  id:
+    type: integer
+    example: 123
+    readOnly: true

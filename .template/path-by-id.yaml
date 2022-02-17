@@ -1,0 +1,78 @@
+get:
+  summary: Retrieve a _name_
+  tags:
+    - _Name_
+  operationId: get__name_
+  description: Retrieve a single _name_
+  responses:
+    200:
+      description: OK
+      content:
+        application/json:
+          schema:
+            $ref: ./model.yaml
+    404:
+      description: Not Found
+      content:
+        application/json:
+          schema:
+            $ref: ../error.yaml
+          example:
+            $ref: ./404.yaml
+put:
+  summary: Update a _name_
+  tags:
+    - _Name_
+  operationId: update__name_
+  description: Update a _name_
+  requestBody:
+    required: true
+    content:
+      application/json:
+        schema:
+          $ref: ./model.yaml
+  responses:
+    200:
+      description: OK
+      content:
+        application/json:
+          schema:
+            $ref: ./model.yaml
+    400:
+      description: Bad Request
+      content:
+        application/json:
+          schema:
+            $ref: ../error.yaml
+          example:
+            $ref: ./400.yaml
+    404:
+      description: Not Found
+      content:
+        application/json:
+          schema:
+            $ref: ../error.yaml
+          example:
+            $ref: ./404.yaml
+delete:
+  summary: Delete a _name_
+  tags:
+    - _Name_
+  operationId: delete__name_
+  description: Delete a _name_
+  responses:
+    404:
+      description: Not Found
+      content:
+        application/json:
+          schema:
+            $ref: ../error.yaml
+          example:
+            $ref: ./404.yaml
+parameters:
+  - schema:
+      type: integer
+    name: id
+    description: _Name_ ID
+    in: path
+    required: true

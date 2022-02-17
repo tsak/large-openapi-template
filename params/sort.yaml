@@ -1,0 +1,6 @@
+in: query
+name: sort
+schema:
+  type: string
+  example: created,-name
+description: List of fields to sort by, separated by commas. Prefix with a minus to invert sort direction

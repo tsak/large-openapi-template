@@ -1,0 +1,73 @@
+get:
+  summary: List _name_s
+  tags:
+    - _Name_
+  responses:
+    200:
+      description: OK
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              offset:
+                type: integer
+                minimum: 0
+                default: 0
+              limit:
+                type: integer
+                minimum: 1
+                default: 50
+              total:
+                type: integer
+              search:
+                  type: string
+              sort:
+                type: array
+                items:
+                  type: object
+                  properties:
+                    field:
+                      type: string
+                    order:
+                      type: string
+                      enum: [ asc, desc ]
+              data:
+                type: array
+                items:
+                  $ref: ./model.yaml
+  operationId: list__name_s
+  description: Retrieve all _name_s
+  parameters:
+    - $ref: '../params/offset.yaml'
+    - $ref: '../params/limit.yaml'
+    - $ref: '../params/sort.yaml'
+    - $ref: '../params/search.yaml'
+post:
+  summary: Create a _name_
+  tags:
+    - _Name_
+  operationId: create__name_
+  description: Create a new _name_
+  requestBody:
+    required: true
+    content:
+      application/json:
+        schema:
+          $ref: ./model.yaml
+  responses:
+    200:
+      description: OK
+      content:
+        application/json:
+          schema:
+            $ref: ./model.yaml
+    400:
+      description: Bad Request
+      content:
+        application/json:
+          schema:
+            $ref: ../error.yaml
+          example:
+            $ref: ./400.yaml
+  parameters: []

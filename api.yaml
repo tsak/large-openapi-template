@@ -1,0 +1,50 @@
+openapi: 3.0.0
+info:
+  title: A large API
+  x-logo:
+    url: "data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMzIwIDIwMCINCgl4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMjAiIGhlaWdodD0iMjAwIj4NCgk8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSg3MCw0MCkiIHN0eWxlPSJvcGFjaXR5OiAxMDAlIj4NCgkJPHBvbHlnb24gc3Ryb2tlLXdpZHRoPSIxIiBzdHJva2U9IiMwMDAiIGZpbGw9IiMwMDAiIHBvaW50cz0iMzMsNzIgMzMsMTAgMTI2LDEwIDEzOCwyMiAxMzgsOTUgODYsOTUgODYsMTAwIDgyLDEwOCA3OCwxMTMgNzQsMTE2IDY4LDEyNSA2MCwxMjkgNjAsMTQwIDEwLDE0MCAxMCwxMDkgOSwxMDkgOSw4MSAxMyw3NSAyMCw2OSAyMSw2NSAyNSw1OCAzMCw1NSAzMyw1NCAzMyw3MiIvPg0KCQk8cG9seWdvbiBzdHJva2Utd2lkdGg9IjEiIHN0cm9rZT0iIzAwMCIgZmlsbD0iIzc3YyIgcG9pbnRzPSIzNSwxMSA1OCwxMSA1OCwzMyAxMTMsMzMgMTEzLDExIDEyNSwxMSAxMzYsMjIgMTM2LDk0IDEyNyw5NCAxMjcsNTYgNjQsNTYgNjIsNTQgNTMsNTQgNTIsNTYgNDUsNTYgNDUsNjUgMzUsNzIgMzUsMTEiLz4NCgkJPHBvbHlnb24gc3Ryb2tlLXdpZHRoPSIxIiBzdHJva2U9IiMwMDAiIGZpbGw9IiNmZmYiIHBvaW50cz0iMzMsNzIgMzMsNTQgMzAsNTYgMjYsNTggMjIsNjUgMjEsNjkgMTQsNzUgMTAsODEgMTAsMTA4IDExLDEwOSAxMSwxMzkgNDAsMTM5IDQwLDExOCA0OCwxMTggNTIsMTE0IDUyLDk1IDUwLDkyIDUwLDgyIDY1LDY5IDY1LDU3IDYyLDU1IDU5LDU1IDYyLDU4IDYyLDY1IDYxLDY2IDU0LDY2IDUxLDYzIDQyLDcwIDMwLDc2IDE4LDg1IDE4LDg0IDMwLDc1IDI2LDc0IDIzLDcxIDI2LDczIDMwLDc0IDMzLDcyIi8+DQoJCTxwb2x5Z29uIHN0cm9rZS13aWR0aD0iMSIgc3Ryb2tlPSIjMDAwIiBmaWxsPSIjZmZmIiBwb2ludHM9IjUwLDYxIDUyLDU0IDYwLDU1IDYxLDU4IDYxLDY1IDU0LDY1IDUwLDYxIi8+DQoJCTxwb2x5Z29uIHN0cm9rZS13aWR0aD0iMSIgc3Ryb2tlPSIjMDAwIiBmaWxsPSIjZmZmIiBwb2ludHM9IjUxLDkyIDUxLDgyIDY2LDY5IDY2LDU3IDEyNSw1NyAxMjUsOTQgNTIsOTQgNTEsOTIiLz4NCgkJPHBvbHlnb24gc3Ryb2tlLXdpZHRoPSIxIiBzdHJva2U9IiMwMDAiIGZpbGw9IiNiYmIiIHBvaW50cz0iNjAsMTEgMTExLDExIDExMSwzMiA2MCwzMiA2MCwxMSIvPg0KCQk8cG9seWdvbiBzdHJva2Utd2lkdGg9IjEiIHN0cm9rZT0iIzAwMCIgZmlsbD0iIzAwMCIgcG9pbnRzPSI5NiwxNCAxMDcsMTQgMTA3LDI4IDk2LDI4IDk2LDE0Ii8+DQoJCTxwb2x5Z29uIHN0cm9rZS13aWR0aD0iMSIgc3Ryb2tlPSIjMDAwIiBmaWxsPSIjNzdjIiBwb2ludHM9Ijk4LDE1IDEwNSwxNSAxMDUsMjcgOTgsMjcgOTgsMTUiLz4NCgkJPHBvbHlnb24gc3Ryb2tlLXdpZHRoPSIxIiBzdHJva2U9IiMwMDAiIGZpbGw9IiNmZmYiIHBvaW50cz0iNDcsNTcgNTAsNTcgNTAsNTkgNDcsNjMgNDcsNTciLz4NCgkJPHBvbHlnb24gc3Ryb2tlLXdpZHRoPSIxIiBzdHJva2U9IiMwMDAiIGZpbGw9IiNmZmYiIHBvaW50cz0iNDEsMTM5IDQxLDExOSA0OCwxMTkgNTMsMTE0IDUzLDEwNSA1NywxMDcgNjUsMTA3IDY1LDEwOSA2OSwxMTQgNzMsMTE0IDczLDExNiA2NywxMjUgNTksMTI4IDU5LDEzOSA0MSwxMzkiLz4NCgkJPHBvbHlnb24gc3Ryb2tlLXdpZHRoPSIxIiBzdHJva2U9IiMwMDAiIGZpbGw9IiNmZmYiIHBvaW50cz0iNTcsOTggNTMsMTAwIDUzLDk1IDc0LDk1IDY0LDEwNSA2MywxMDUgNjUsMTAzIDYwLDk4IDU3LDk4Ii8+DQoJCTxwb2x5Z29uIHN0cm9rZS13aWR0aD0iMSIgc3Ryb2tlPSIjMDAwIiBmaWxsPSIjZmZmIiBwb2ludHM9IjUzLDk1IDUzLDEwMCA1OCw5NyA1Myw5NSIvPg0KCQk8cG9seWdvbiBzdHJva2Utd2lkdGg9IjEiIHN0cm9rZT0iIzAwMCIgZmlsbD0iI2ZmZiIgcG9pbnRzPSI3OCw5NSA4NSw5NSA4NSwxMDAgODEsMTA4IDc4LDExMiA3MywxMTMgNzAsMTEzIDY3LDEwOSA2NywxMDYgNzgsOTUiLz4NCgkJPHBvbHlnb24gc3Ryb2tlLXdpZHRoPSIxIiBzdHJva2U9IiMwMDAiIGZpbGw9IiNmZmYiIHBvaW50cz0iNjgsMTA2IDY4LDEwOSA3MCwxMTIgNzIsMTEyIDc2LDExMSA3NywxMDggNzMsMTA1IDY4LDEwNiIvPg0KCQk8cG9seWdvbiBzdHJva2Utd2lkdGg9IjEiIHN0cm9rZT0iIzAwMCIgZmlsbD0iI2ZmZiIgcG9pbnRzPSI1NCwxMDQgNjIsMTA2IDY0LDEwMyA2MCw5OSA1Nyw5OSA1NCwxMDEgNTQsMTA0Ii8+DQoJCTxwb2x5bGluZSBzdHJva2Utd2lkdGg9IjEiIHN0cm9rZT0iIzAwMCIgZmlsbD0ibm9uZSIgcG9pbnRzPSIxMjYsMTEgMTM3LDIyIDEzNyw5NCIvPg0KCTwvZz4NCjwvc3ZnPg0K"
+    backgroundColor: '#fafafa'
+    altText: Amiga Workbench Logo
+  version: '1.0'
+  description: |
+    This is the start of the Large API documentation. You can use Markdown. Headings of level one
+    will end up in the sidebar of the generated documentation, following H2 will render as sub-entries.
+
+    # Example
+
+    This is an example block that will output an entry in the sidebar.
+
+    ## Sub-entry
+
+    See how this renders as a sub-menu item in the side bar.
+
+    Codeblocks can also be inlined here:
+
+    ```json
+    {
+      "Foo": "Bar"
+    }
+    ```
+  contact:
+    email: support@example.com
+servers:
+  - url: '/api/v1'
+tags:
+paths:
+# Every referenced object needs to be added here as well (https://github.com/contiamo/restful-react)
+components:
+  parameters:
+    limitParam:
+      $ref: ./params/limit.yaml
+    offsetParam:
+      $ref: ./params/offset.yaml
+    searchParam:
+      $ref: ./params/search.yaml
+    sortParam:
+      $ref: ./params/sort.yaml
+  schemas:
+  examples:
+  securitySchemes:
+security:
+  - Cookie: []
+  - Token: []

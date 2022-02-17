@@ -1,0 +1,13 @@
+title: Error
+type: object
+properties:
+  message:
+    type: string
+    description: An error message describing the problem that occured
+  errors:
+    type: object
+    description: (Optional) additional errors that add details to the error message
+    additionalProperties:
+      type: array
+      items:
+        type: string
