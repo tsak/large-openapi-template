@@ -29,13 +29,13 @@ cp -nv ./.template/404.yaml "$dir/"
         sed -i "s/_name_/$name/g" "$template"
         sed -i "s/_Name_/$NAME/g" "$template"
     done
-
-    # Insert new tag
-    sed "/^tags:/a\  - name: ${NAME}\n    description: |\n      Describe what ${NAME} is used for..." ../api.yaml
-
-    # Insert new path
-    sed "/^paths:/a\  \/${dir}s:\n    \$ref: .\/${dir}s/\path.yaml\n  '\/${dir}s/{id}':\n    \$ref: .\/${dir}s/\path-by-id.yaml\n" ../api.yaml
-
-    # Insert model component
-    sed "/^  schemas:/a\    $NAME:\n      \$ref: .\/${dir}s/\model.yaml" ../api.yaml
 )
+
+# Insert new tag
+sed -i "/^tags:/a\  - name: ${NAME}\n    description: |\n      Describe what ${NAME} is used for..." api.yaml
+
+# Insert new path
+sed -i "/^paths:/a\  \/${dir}:\n    \$ref: .\/${dir}/\path.yaml\n  '\/${dir}/{id}':\n    \$ref: .\/${dir}/\path-by-id.yaml\n" api.yaml
+
+# Insert model component
+sed -i "/^  schemas:/a\    $NAME:\n      \$ref: .\/${dir}s/\model.yaml" api.yaml
