@@ -1,4 +1,4 @@
 message: _Name_ does not exit
 errors:
-  ID:
+  id:
     - _Name_ with ID 123 does not exist
