@@ -7,7 +7,7 @@ page HTML file as an output.
 
 * NodeJS (tested with 16.x) / `npx`
 * GNU Make
-* Bash
+* Bash (for create script)
 
 ## Usage
 
@@ -16,9 +16,19 @@ page HTML file as an output.
 Runs Redoc CLI in watch mode and serves the documentation on [localhost:8080](http://localhost:8080)
 
 ```bash
-make
-make write
+make # defaults to write
 ```
+
+### Add endpoint
+
+Using the templates in `.template`, create a new endpoint and add references in `api.yaml`
+
+```bash
+./create.bash <name> <directory>
+```
+
+- `name` name of the endpoint to be created, this is used for tags, etc. Use singular, e.g. `pet`
+- `directory` where to put template output, e.g. `pets`. You can also use subdirectories, e.g. `pets/dogs`
 
 ### Build
 

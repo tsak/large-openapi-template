@@ -1,13 +1,12 @@
 #!/usr/bin/env bash
 
-set -euo pipefail
-
 # Adds a new endpoint and model in the given directory based on the template
-
 if [[ -z "$1" ]] || [[ -z "$2" ]]; then
     echo "Please run: '$0 <name> <directory>' or '$0 <name> <directory/subdirectory>'"
     exit 1
 fi
+
+set -euo pipefail
 
 name=$1
 NAME=${name^} # Uppercase first letter
